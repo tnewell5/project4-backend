@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
   def index
-    puts Video.all
-    @videos = Video.all
+    #puts Video.all
+    @videos = [Video.all.sample]
   end
 
   def show
